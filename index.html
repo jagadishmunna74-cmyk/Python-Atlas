@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#090d18">
+  <meta name="description" content="A practical Python programming learning hub by Jagadish Chavda. Learn Python fundamentals, libraries, and hands-on programs.">
+  <title>Python Atlas — Learn Python by Jagadish Chavda</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .creator-contact { display:flex; flex-direction:column; align-items:flex-start; gap:10px; }
+    .creator-photo { width:112px; height:112px; border-radius:50%; object-fit:cover; object-position:center; border:3px solid rgba(125,140,255,.8); box-shadow:0 8px 24px rgba(0,0,0,.28); background:#151b2b; }
+    .photo-note { margin:2px 0 0; max-width:260px; font-size:.78rem; opacity:.72; line-height:1.5; }
+    .photo-note code { font-family:monospace; }
+    @media (max-width:600px) { .creator-photo { width:96px; height:96px; } }
+  </style>
+
+</head>
+<body>
+  <div class="ambient ambient-one"></div><div class="ambient ambient-two"></div>
+  <header class="topbar">
+    <a class="brand" href="#home" aria-label="Python Atlas home"><span class="brand-mark">Py</span><span>python<span class="brand-muted">atlas</span><small>LEARN • BUILD • REPEAT</small></span></a>
+    <nav class="desktop-nav" aria-label="Main navigation">
+      <a href="#learn">Learn</a><a href="#programs">Programs</a><a href="#libraries">Libraries</a><a href="#about">About</a>
+    </nav>
+    <div class="top-actions"><a class="github-link" href="https://github.com/" target="_blank" rel="noreferrer">GitHub <span>↗</span></a><button id="menuToggle" class="menu-toggle" aria-label="Open menu" aria-expanded="false">☰</button></div>
+  </header>
+  <main id="home">
+    <section class="hero wrap">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="pulse"></span> YOUR PRACTICAL PYTHON PLAYBOOK</div>
+        <h1>From first line<br>to <span class="gradient-text">real-world logic.</span></h1>
+        <p class="hero-lead">A clear, hands-on guide to Python programming — fundamentals, useful libraries, and practical programs collected and organised for your learning journey.</p>
+        <div class="hero-buttons"><a class="btn btn-primary" href="#programs">Explore programs <span>↘</span></a><a class="btn btn-secondary" href="#learn">Start with basics</a></div>
+        <div class="hero-proof"><div class="avatar-stack"><span>Py</span><span>{ }</span><span>01</span></div><span>Learn one concept. Build one program.</span></div>
+      </div>
+      <div class="hero-visual">
+        <div class="orbit orbit-a"></div><div class="orbit orbit-b"></div>
+        <div class="code-window">
+          <div class="window-head"><div class="window-dots"><i></i><i></i><i></i></div><span>hello_world.py</span><span class="window-tag">PYTHON 3</span></div>
+          <div class="code-preview"><div><span class="ln">01</span><code><b>def</b> <em>greet</em>(name):</code></div><div><span class="ln">02</span><code>    message = <strong>f"Hello, {name}!"</strong></code></div><div><span class="ln">03</span><code>    <b>return</b> message</code></div><div class="blank"><span class="ln">04</span></div><div><span class="ln">05</span><code><em>print</em>(greet(<strong>"Python learner"</strong>))</code></div><div class="terminal-line"><span>▶</span> Hello, Python learner!</div></div>
+          <div class="window-foot"><span><i class="green-dot"></i> Ready to run</span><span>UTF-8&nbsp; · &nbsp;Python</span></div>
+        </div>
+        <div class="float-chip chip-top"><span>⌘</span> Clean concepts</div><div class="float-chip chip-bottom"><span>✓</span> Practice-driven</div>
+      </div>
+      <div class="hero-scroll"><span></span> SCROLL TO EXPLORE</div>
+    </section>
+    <section class="stats wrap" aria-label="Website highlights">
+      <div><strong>50<span>+</span></strong><span>Practical topics</span></div><div><strong>06</strong><span>Core learning areas</span></div><div><strong>100<span>%</span></strong><span>Beginner friendly</span></div><div><strong>∞</strong><span>Ways to keep building</span></div>
+    </section>
+    <section id="learn" class="section wrap">
+      <div class="section-heading"><div><div class="eyebrow">THE FOUNDATIONS</div><h2>Get comfortable with <span class="gradient-text">Python.</span></h2></div><p>Start with the ideas that power every program. Open a topic to learn the essentials and see a small example.</p></div>
+      <div class="topic-grid" id="topicGrid">
+        <article class="topic-card"><div class="topic-icon icon-purple">⌘</div><div class="card-kicker">01 / OVERVIEW</div><h3>Python history</h3><p>Where Python came from and how it became a widely used language.</p><button class="text-action" data-topic="history">Explore topic <span>↗</span></button></article>
+        <article class="topic-card"><div class="topic-icon icon-blue">✳</div><div class="card-kicker">02 / LANGUAGE</div><h3>Key features</h3><p>Readable syntax, dynamic typing, portability, and a rich ecosystem.</p><button class="text-action" data-topic="features">Explore topic <span>↗</span></button></article>
+        <article class="topic-card"><div class="topic-icon icon-orange">◈</div><div class="card-kicker">03 / REAL WORLD</div><h3>Applications</h3><p>Explore how Python supports web, data, automation, AI, and more.</p><button class="text-action" data-topic="applications">Explore topic <span>↗</span></button></article>
+        <article class="topic-card"><div class="topic-icon icon-green">x=</div><div class="card-kicker">04 / BASICS</div><h3>Variables</h3><p>Give values meaningful names and use them in expressions.</p><button class="text-action" data-topic="variables">Explore topic <span>↗</span></button></article>
+        <article class="topic-card"><div class="topic-icon icon-pink">▦</div><div class="card-kicker">05 / DATA</div><h3>Data types</h3><p>Understand strings, numbers, booleans, lists, tuples, sets, and dictionaries.</p><button class="text-action" data-topic="datatypes">Explore topic <span>↗</span></button></article>
+        <article class="topic-card"><div class="topic-icon icon-yellow">✧</div><div class="card-kicker">06 / TOOLKIT</div><h3>Python libraries</h3><p>Discover standard-library tools and popular packages for real projects.</p><button class="text-action" data-topic="libraries">Explore topic <span>↗</span></button></article>
+      </div>
+      <div id="topicDetail" class="topic-detail" hidden><button id="closeTopic" class="close-detail" aria-label="Close topic">×</button><div id="topicDetailContent"></div></div>
+    </section>
+    <section class="concept-band">
+      <div class="wrap concept-layout"><div><div class="eyebrow">A QUICK LOOK</div><h2>Small syntax.<br><span class="gradient-text">Big possibilities.</span></h2><p>Python code is designed to be readable. These are a few everyday building blocks you will use again and again.</p></div><div class="concept-code"><div class="concept-tabs"><span class="active">variables.py</span><span>Output</span></div><pre><code><span class="comment"># Store information</span>
+student = <span class="string">"Jagadish"</span>
+marks = <span class="number">92</span>
+is_learning = <span class="keyword">True</span>
+
+<span class="keyword">if</span> marks >= <span class="number">90</span>:
+    <span class="function">print</span>(<span class="string">f"{student} earned an A!"</span>)</code></pre><div class="concept-output"><span>●</span> Jagadish earned an A!</div></div></div>
+    </section>
+    <section id="programs" class="section wrap">
+      <div class="section-heading programs-heading"><div><div class="eyebrow">THE PRACTICE LIBRARY</div><h2>Learn by <span class="gradient-text">doing.</span></h2></div><p>Browse practical programs inspired by your uploaded PDF. Search by concept or filter by category, then copy a snippet to try it yourself.</p></div>
+      <div class="program-toolbar"><label class="searchbox"><span>⌕</span><input id="programSearch" type="search" placeholder="Search programs, e.g. leap year..." autocomplete="off"><kbd>⌘ K</kbd></label><div class="result-count" id="resultCount">50 practicals</div></div>
+      <div class="filter-row" id="categoryFilters" aria-label="Filter by category"></div>
+      <div id="programGrid" class="program-grid"></div>
+      <div id="emptyState" class="empty-state" hidden><div>⌕</div><h3>No programs found</h3><p>Try another keyword or select a different category.</p><button class="btn btn-secondary" id="clearFilters">Clear filters</button></div>
+      <div class="program-note"><span>ⓘ</span><p><strong>Learning note:</strong> The examples are cleaned, beginner-friendly versions of the practical topics represented in the uploaded PDF. Run them with Python 3; programs that request input should be run in a terminal or notebook.</p></div>
+    </section>
+    <section id="libraries" class="section libraries-section">
+      <div class="wrap"><div class="section-heading"><div><div class="eyebrow">YOUR TOOLKIT</div><h2>Libraries that <span class="gradient-text">do more.</span></h2></div><p>Python's ecosystem helps you solve bigger problems without starting from zero.</p></div>
+      <div class="library-grid">
+        <article class="library-card"><div class="lib-symbol purple">√</div><h3>math</h3><p>Mathematical functions, square roots, trigonometry, and constants.</p><span class="lib-tag">Standard library</span><code>math.sqrt(49)</code></article>
+        <article class="library-card"><div class="lib-symbol blue">◷</div><h3>datetime</h3><p>Work with dates, times, formatting, and calendar calculations.</p><span class="lib-tag">Standard library</span><code>date.today()</code></article>
+        <article class="library-card"><div class="lib-symbol orange">▤</div><h3>random</h3><p>Shuffle items, select random values, and generate test data.</p><span class="lib-tag">Standard library</span><code>random.shuffle(items)</code></article>
+        <article class="library-card"><div class="lib-symbol green">▥</div><h3>statistics</h3><p>Calculate means, medians, and other common statistical values.</p><span class="lib-tag">Standard library</span><code>statistics.mean(data)</code></article>
+        <article class="library-card"><div class="lib-symbol pink">▦</div><h3>NumPy</h3><p>Fast numerical arrays, vector operations, and scientific computing.</p><span class="lib-tag">Install separately</span><code>import numpy as np</code></article>
+        <article class="library-card"><div class="lib-symbol yellow">▧</div><h3>Matplotlib</h3><p>Create charts and plots, including graphs for mathematical functions.</p><span class="lib-tag">Install separately</span><code>import matplotlib.pyplot as plt</code></article>
+        <article class="library-card"><div class="lib-symbol cyan">▦</div><h3>pandas</h3><p>Organise, clean, transform, and analyse tabular datasets.</p><span class="lib-tag">Install separately</span><code>import pandas as pd</code></article>
+        <article class="library-card"><div class="lib-symbol violet">✦</div><h3>scikit-learn</h3><p>Build machine-learning workflows with accessible estimator APIs.</p><span class="lib-tag">Install separately</span><code>from sklearn import ...</code></article>
+      </div></div>
+    </section>
+    <section class="cta-section wrap"><div class="cta-card"><div class="cta-orb"></div><div class="cta-content"><div class="eyebrow">YOUR NEXT STEP</div><h2>Practice today.<br>Build something <span class="gradient-text">tomorrow.</span></h2><p>Pick one practical, change the inputs, predict the output, and run it. Repetition turns syntax into skill.</p><a class="btn btn-primary" href="#programs">Choose a program <span>↗</span></a></div><div class="cta-checklist"><div><span>01</span><p>Read the problem</p><b>→</b></div><div><span>02</span><p>Write the logic</p><b>→</b></div><div><span>03</span><p>Test & improve</p><b>✓</b></div></div></div></section>
+  </main>
+  <footer id="about" class="footer"><div class="wrap footer-main"><div class="footer-brand"><a class="brand" href="#home"><span class="brand-mark">Py</span><span>python<span class="brand-muted">atlas</span><small>LEARN • BUILD • REPEAT</small></span></a><p>A personal Python learning resource built to make programming concepts easier to explore, one practical at a time.</p></div><div class="footer-links"><div><h4>Explore</h4><a href="#learn">Fundamentals</a><a href="#programs">Practical programs</a><a href="#libraries">Libraries</a></div><div class="creator-contact"><h4>Contact &amp; Creator</h4><img class="creator-photo" src="jagadish-photo.jpeg" alt="Photo of Jagadish Chavda"><span>Jagadish Chavda</span><a href="mailto:jagadish.munna74@gmail.com">jagadish.munna74@gmail.com</a><p class="photo-note">Add your photo as <code>jagadish-photo.jpg</code> in the same folder as this page.</p></div></div></div><div class="wrap footer-bottom"><span>© <span id="year"></span> Jagadish Chavda. Made for curious minds.</span><a href="#home">Back to top ↑</a></div></footer>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <script src="script.js"></script>
+</body>
+</html>
